@@ -155,8 +155,3 @@ public class Scraper {
         closeDriver();
         return thisClassInfoList;
     }
-
-    public static void main(String[] args) {
-
-    }
-}

@@ -1,0 +1,107 @@
+/* General resets and styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .header__left {
+    color: black;
+    font-size: medium;
+  }
+
+  .Title {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the size as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    color: black; /* Text color */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .header__middle,
+  .header__right {
+    flex: 1;
+  }
+  
+  .header__middle {
+    flex: 2;
+    text-align: center;
+  }
+
+  .Feature {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the size as needed */
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: transform 0.3s;
+  }
+
+  .Feature:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .header__right {
+    text-align: right;
+  }
+
+  .header__right .SignUp {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the size as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    font-family: Arial, sans-serif;
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Primary button color */
+    border: none;
+    border-radius: 12px; /* Curved edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .header__right .SignUp:last-child {
+    margin-right:0;
+  } 
+
+  .header__right .SignUp:hover {
+    background-color: green;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  /* Active effect */
+  .header__right .SignUp:active {
+    background-color: darkblue; /* Even darker shade on click */
+    transform: scale(0.98); /* Slightly shrink button on click */
+  }
+
+  /* Ensure content below the header is not hidden */
+  main {
+    padding-top: 50px; /* Adjust based on header height */
+  }
+  

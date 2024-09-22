@@ -1,0 +1,10 @@
+.Search {
+    margin-left: 150px;
+    display: flex; /* Arrange children in a row */
+    gap: 20px; /* Add space between dropdowns */
+  }
+  
+  .Subject, .TimeConflictEnrollment, .WaitlistLevel {
+    flex: 0.33; /* Make all dropdowns take equal width */
+  }
+  
